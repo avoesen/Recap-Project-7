@@ -23,6 +23,7 @@ export default function DetailPage({ places, handleDeletePlace }) {
           <SvgLeft width={60} />
         </StyledLink>
         <PlaceCard places={[place]} />
+        <StyledP>{place.description}</StyledP>
         <div>
           <Styledbutton onClick={() => handleDeletePlace(place.id)}>
             delete
@@ -51,4 +52,7 @@ const StyledList = styled.ul`
   margin: 0;
   padding: 0;
   background-color: #0047ab;
+`;
+const StyledP = styled.p`
+  text-align: center;
 `;
