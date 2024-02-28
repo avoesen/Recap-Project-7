@@ -1,7 +1,7 @@
 import PlaceCard from "@/components/PlaceCard";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Left from "@/icons/Left.svg";
+import Chevron from "@/icons/Chevron.svg";
 import styled from "styled-components";
 import Styledbutton from "@/components/Styled/Button";
 
@@ -27,20 +27,21 @@ export default function DetailPage({ places, handleDeletePlace }) {
           <Styledbutton onClick={() => handleDeletePlace(place.id)}>
             delete
           </Styledbutton>
-          <Link href={`/places/${id}/edit`}>edit</Link>
+          <StyledLink href={`/places/${id}/edit`}>edit</StyledLink>
         </div>
       </StyledList>
     );
   }
 }
-const SvgLeft = styled(Left)`
+const SvgLeft = styled(Chevron)`
   stroke: pink;
   /* background-color: transparent; */
   position: fixed;
-  left: 30%;
+  left: 15rem;
 `;
 const StyledLink = styled(Link)`
   color: pink;
+  text-decoration: none;
 `;
 const StyledList = styled.ul`
   display: flex;

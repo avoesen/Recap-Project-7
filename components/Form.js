@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Button from "@/components/Styled/Button";
 export default function Form({ onSubmit, defaultData, id }) {
   function handleSubmit(event) {
     event.preventDefault();
@@ -48,7 +48,7 @@ export default function Form({ onSubmit, defaultData, id }) {
         type="text"
         defaultValue={defaultData?.description}
       ></input>
-      <button type="submit">Submit</button>
+      <Button type="submit">Submit</Button>
     </StyledForm>
   );
 }
