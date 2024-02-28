@@ -5,7 +5,10 @@ export default function createPlace({ handleAddPlace }) {
   return (
     <>
       <Link href="/">got back</Link>
-      <Form onSubmit={(formData) => handleAddPlace(formData)} />
+      <Form
+        formName="create-page"
+        onSubmit={(formData) => handleAddPlace(formData)}
+      />
     </>
   );
 }

@@ -6,6 +6,10 @@ const Styledbutton = styled.button`
   box-shadow: 2px black;
   color: #0047ab;
   margin: 1rem;
+
+  &:hover {
+    color: white;
+  }
 `;
 
 export default Styledbutton;

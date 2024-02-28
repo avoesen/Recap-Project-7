@@ -40,6 +40,9 @@ const StyledLi = styled.li`
   margin: 1rem;
   box-shadow: 2px 2px 2px black;
   box-shadow: 5px 5px 0px pink;
+  &:hover {
+    color: #0047ab;
+  }
 `;
 const StyledLink = styled(Link)`
   text-decoration: none;

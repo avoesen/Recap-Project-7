@@ -10,7 +10,12 @@ export default function EditDetailPage({ handleEditPlace, places }) {
     <>
       <h1>Edit Place</h1>
       <Link href={`places/${id}`}></Link>
-      <Form defaultData={place} onSubmit={handleEditPlace} id={id} />
+      <Form
+        formName="edit-page"
+        defaultData={place}
+        onSubmit={handleEditPlace}
+        id={id}
+      />
     </>
   );
 }
